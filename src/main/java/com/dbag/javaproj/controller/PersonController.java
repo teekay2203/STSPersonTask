@@ -50,7 +50,6 @@ public class PersonController {
 	@PostMapping("person")
 	public Person createPerson(@RequestBody Person person)
 	{
-		PersonController pc;
 		return this.persondbrepo.save(person);
 	}
 
